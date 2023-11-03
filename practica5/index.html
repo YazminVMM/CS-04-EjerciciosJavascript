@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica5</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>Núm. Ej.</th>
+            <th>Descripción</th>
+            <th>Entradas</th>
+            <th>Salidas</th>
+        </tr>
+        <tr>
+            <td><button onclick="imprimirPersonas();">Imprimir Arreglo</button>
+                <button onclick="obtenerIndiceDeMaria();">Imprimir Funciones</button></td>
+            <td><h4>Para cada uno de los ejercicios siguientes, suponga que empieza con la siguiente matriz de personas.</h4></td>
+            <td>let people = ["Maria", "Dani", "Luis", "Juan", "Camila"]</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Escribe un comando que imprima todas las personas de la lista.</td>
+            <td>let people = ["Maria", "Dani", "Luis", "Juan", "Camila"]</td>
+            <td><p id="imprimirPersonas"></p></td>
+        </tr>
+        <tr>
+            <!-- <td><button onclick="removerDani()">2</button></td> -->
+            <td>2</td>
+            <td>Escribe el comando que elimine "Dani" de la matriz.</td>
+            <td>people.splice(i, 1);</td>
+            <td><p id="removerDani"></p></td>
+        </tr>
+        <tr>
+            <!--<td><button onclick="removerJuan()">3</button></td>-->
+            <td>3</td>
+            <td>Escribe el comando para eliminar "Juan" de la matriz.</td>
+            <td>people.splice(i, 1);</td>
+            <td><p id="removerJuan"></p></td>
+        </tr>
+        <tr>
+            <!-- <td><button onclick="moverLuis()">4</button></td> -->
+            <td>4</td>
+            <td>Escribe el comando para mover "Luis" al principio de la matriz.</td>
+            <td>unshift(luis[0])</td>
+            <td><p id="arregloLuisInicio"></p></td>
+        </tr>
+        <tr>
+            <!-- <td><button onclick="agregarTuNombre()">5</button></td> -->
+            <td>5</td>
+            <td>Escribe la orden para añadir tu nombre al final del array.</td>
+            <td>.push(Yazmin)</td>
+            <td><p id="agregarTuNombre"></p></td>
+        </tr>
+        <tr>
+            <!-- <td><button onclick="imprimirHastaMaria()">6</button></td> -->
+            <td>6</td>
+            <td>Utilizando un bucle, itera a través de este array y después de console.log "María", sal del bucle. (usar break)</td>
+            <td>break</td>
+            <td><p id="imprimirHastaMaria"></p></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Escribe el comando que da el indexOf donde se encuentra "Maria".</td>
+            <td>indexOf</td>
+            <td><p id="obtenerIndiceDeMaria"></p></td>
+        </tr>
+    </table>
+    
+
+    <script src="ejercicio5.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Núm. Ej.</th>
+            <th>Descripción</th>
+            <th>Entradas</th>
+            <th>Salidas</th>
+        </tr>
+        <tr>
+            <td><button onclick="mostrarResultado()">4</button></td>
+            <td>Crea un programa que haga un bucle sobre las 2 matrices; si hay cursos comunes imprímelos en la consola.</td>
+            <td><ul>
+                <li>let student1Courses = ['Math', 'English', 'Programming']</li>
+                <li>let student2Courses = ['Geography', 'Spanish', 'Programming']</li>
+            </ul></td>
+            <td><p id="resultado"></p></td>
+        </tr>
+    </table>
+    <script src="ejercicios4.js"></script>
+</body>
+</html>
